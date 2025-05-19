@@ -10,7 +10,7 @@ use App\Http\Controllers\TwoFactorAuthController;
 use App\Http\Controllers\TwoFactorController;
 use App\Http\Middleware\Ensure2FAIsVerified; 
 
-// ✅ Force register 2fa middleware at runtime
+// Force register 2fa middleware at runtime
 app('router')->aliasMiddleware('2fa', Ensure2FAIsVerified::class);
 
 // =======================
